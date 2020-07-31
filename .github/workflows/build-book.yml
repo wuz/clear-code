@@ -16,12 +16,10 @@ jobs:
             -f gfm
             --toc
             --lua-filter plugins/pagebreak.lua
-
-            -V linkcolor:blue 
             -V geometry:a4paper 
             -V geometry:margin=2cm 
             --pdf-engine=xelatex 
-            --output=output/book.pdf 
+            --output=output/ClearCode.pdf 
             ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
@@ -30,3 +28,4 @@ jobs:
 # -H plugins/inline_code.tex
 # -H plugins/cover.tex
 # -H plugins/quote.tex
+# -V linkcolor:blue
