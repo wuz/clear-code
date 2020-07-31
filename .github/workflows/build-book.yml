@@ -15,10 +15,10 @@ jobs:
           args: >- # mulitline arguments
             -f gfm
             --toc
-            -H chapter_break.tex
-            -H inline_code.tex
-            -H cover.tex
-            -H quote.tex
+            -H plugins/chapter_break.tex
+            -H plugins/inline_code.tex
+            -H plugins/cover.tex
+            -H plugins/quote.tex
             -V linkcolor:blue 
             -V geometry:a4paper 
             -V geometry:margin=2cm 
