@@ -12,7 +12,7 @@ jobs:
           echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
       - uses: docker://pandoc/latex:2.9
         with:
-          args: |>
+          args: >- # mulitline arguments
             -f gfm
             --toc
             -H chapter_break.tex
@@ -25,7 +25,8 @@ jobs:
             -V mainfont="DejaVu Serif" 
             -V monofont="DejaVu Sans Mono" 
             --pdf-engine=xelatex 
-            --output=output/book.pdf ${{ env.FILELIST }}
+            --output=output/book.pdf 
+            ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
           name: output
