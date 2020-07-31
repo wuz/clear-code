@@ -15,7 +15,7 @@ jobs:
           args: >- # mulitline arguments
             -f gfm
             --toc
-            -H plugins/chapter_break.tex
+            --lua-filter plugins/pagebreak.lua
             -H plugins/inline_code.tex
             -H plugins/cover.tex
             -H plugins/quote.tex
