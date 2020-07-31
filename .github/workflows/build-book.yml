@@ -18,7 +18,8 @@ jobs:
             --lua-filter plugins/pagebreak.lua
             -V geometry:a4paper 
             -V geometry:margin=2cm 
-            --pdf-engine=xelatex 
+            --pdf-engine=xelatex
+            --css assets/style.css
             --output=output/ClearCode.pdf 
             ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
