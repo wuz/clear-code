@@ -16,7 +16,6 @@ jobs:
             -f gfm
             --toc
             --lua-filter plugins/pagebreak.lua
-            -H plugins/inline_code.tex
             -H plugins/cover.tex
             -H plugins/quote.tex
             -V linkcolor:blue 
@@ -29,3 +28,4 @@ jobs:
         with:
           name: output
           path: output
+#            -H plugins/inline_code.tex
