@@ -20,12 +20,13 @@ jobs:
             -V geometry:margin=2cm 
             --pdf-engine=xelatex
             --css assets/style.css
-            --output=output/ClearCode.pdf 
+            --output=output/ClearCode.pdf
+            -s
             ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
-          name: output
-          path: output
+          name: Clear Code
+          path: output/ClearCode.pdf
 # -H plugins/inline_code.tex
 # -H plugins/cover.tex
 # -H plugins/quote.tex
