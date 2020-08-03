@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          add-apt-repository ppa:pov/wkhtmltopdf
+          apt update
+          apt install wkhtmltopdf
           mkdir output  # create output dir
           echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
       - uses: docker://pandoc/latex:2.9
@@ -19,7 +22,6 @@ jobs:
             -f gfm
             --toc
             --lua-filter plugins/pagebreak.lua
-            --pdf-engine=wkhtmltopdf
             --css assets/style.css 
             -o output/ClearCode.${{matrix.filetype}}
             --metadata-file=metadata.yml
@@ -28,4 +30,4 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: Clear Code
-          path: output/ClearCode.pdf
+          path: output/ClearCode.${{matrix.filetype}}
