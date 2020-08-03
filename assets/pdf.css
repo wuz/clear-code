@@ -11,13 +11,12 @@ html {
 
 body {
   color: #444;
-  font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman",
-    serif;
-  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   line-height: 1.7;
   padding: 1em;
   margin: auto;
-  max-width: 42em;
+  max-width: 60em;
   background: #fefefe;
 }
 

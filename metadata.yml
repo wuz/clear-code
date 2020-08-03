@@ -1,14 +1,7 @@
 ---
 lang: en-US
-cover-image: ./cover.png
-title:
-- type: main
-  text: wuz's guide to clear code
-- type: subtitle
-  text: Writing code for clarity
-creator:
-- role: author
-  text: wuz (Conlin Durbin)
+title: wuz's guide to clear code
+author: wuz (Conlin Durbin)
 publisher: Hackerback Publishing
 rights: © 2020 Conlin Durbin, CC BY-NC
 stylesheet: assets/epub.css

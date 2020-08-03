@@ -18,7 +18,6 @@ Clear code, in contrast to "clean" code is code that is written to express clari
 I find examples to be the best tool for explaining concepts, especially related to code. Here I want to present a quick example of *clear code*, and show how it differs from *clean code*.
 The original "clean code" book says you should prefer rely on polymorphism over `if/else` and `switch/case` statements. In many codebases this does provide clearer code, however one doesn't have to look far to find a great example of this breaking down. In the Kubernetes source code, we can find incredibly *clear code*, that doesn't meet the definition of *clean code*. 
 
-\newpage
 
 **Great, clear documentation**
 
@@ -27,8 +26,6 @@ The original "clean code" book says you should prefer rely on polymorphism over 
 **Clear, but not "clean"**
 
 ![An example of clear code in the kubernetes codebase](assets/kubernetes_clear_code_example.png)
-
-\newpage
 
 ### A Systems approach
 

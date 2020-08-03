@@ -3,29 +3,46 @@ name: Build Book
 on: push
 
 jobs:
-  build_book:
+  build_pdf:
     runs-on: ubuntu-18.04
-    strategy:
-      matrix:
-        filetype: ["pdf", "epub"]
     steps:
       - uses: actions/checkout@v2
       - run: |
-          sudo apt install wkhtmltopdf
-          mkdir output  # create output dir
           echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
       - uses: docker://pandoc/latex:2.9
         with:
           args: >- # mulitline arguments
             -f gfm
             --toc
-            --lua-filter plugins/pagebreak.lua
+            -o ClearCode.pdf
+            --metadata-file=metadata.yml
+            --pdf-engine=wkhtmltopdf 
+            --css assets/pdf.css 
+            --metadata title="wuz's guide to clear code"
+            -s
+            ${{ env.FILELIST }}
+      - uses: actions/upload-artifact@master
+        with:
+          name: ClearCode.pdf
+          path: ClearCode.pdf
+  build_epub:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: >- # mulitline arguments
+            -f gfm
+            --toc
             --css assets/style.css 
-            -o output/ClearCode.${{matrix.filetype}}
+            -o ClearCode.epub
             --metadata-file=metadata.yml
             -s
             ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
-          name: Clear Code
-          path: output/ClearCode.${{matrix.filetype}}
+          name: ClearCode.epub
+          path: ClearCode.epub
+
