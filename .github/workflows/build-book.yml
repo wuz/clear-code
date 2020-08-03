@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build_pdf:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - run: | 
@@ -28,7 +28,7 @@ jobs:
           name: ClearCode.pdf
           path: ClearCode.pdf
   build_epub:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - run: |
