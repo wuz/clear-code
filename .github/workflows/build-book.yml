@@ -16,18 +16,12 @@ jobs:
             -f gfm
             --toc
             --lua-filter plugins/pagebreak.lua
-            -V geometry:a4paper 
-            -V geometry:margin=2cm 
-            --pdf-engine=xelatex
-            --css assets/style.css
-            --output=output/ClearCode.pdf
+            --css assets/style.css 
+            -o output/ClearCode.pdf 
+            --metadata-file=metadata.yml
             -s
             ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
           name: Clear Code
           path: output/ClearCode.pdf
-# -H plugins/inline_code.tex
-# -H plugins/cover.tex
-# -H plugins/quote.tex
-# -V linkcolor:blue
