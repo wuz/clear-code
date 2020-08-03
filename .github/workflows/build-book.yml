@@ -5,6 +5,9 @@ on: push
 jobs:
   build_book:
     runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        filetype: ["pdf", "epub"]
     steps:
       - uses: actions/checkout@v2
       - run: |
@@ -16,8 +19,9 @@ jobs:
             -f gfm
             --toc
             --lua-filter plugins/pagebreak.lua
+            --pdf-engine=wkhtmltopdf
             --css assets/style.css 
-            -o output/ClearCode.pdf 
+            -o output/ClearCode.${{matrix.filetype}}
             --metadata-file=metadata.yml
             -s
             ${{ env.FILELIST }}
