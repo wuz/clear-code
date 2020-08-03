@@ -11,9 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          sudo add-apt-repository ppa:pov/wkhtmltopdf
-          sudo apt update
-          sudo apt install wkhtmltopdf
+          apt install wkhtmltopdf
           mkdir output  # create output dir
           echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
       - uses: docker://pandoc/latex:2.9
