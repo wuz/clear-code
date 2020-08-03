@@ -7,21 +7,19 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          sudo apt install wkhtmltopdf
-          echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
-      - uses: docker://pandoc/latex:2.9
-        with:
-          args: >- # mulitline arguments
-            -f gfm
-            --toc
-            -o ClearCode.pdf
-            --metadata-file=metadata.yml
-            --pdf-engine=wkhtmltopdf 
-            --css assets/pdf.css 
-            --metadata title="wuz's guide to clear code"
-            -s
-            ${{ env.FILELIST }}
+      - run: sudo apt install wkhtmltopdf pandoc
+      - run: echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
+      - run: >-
+          pandoc
+          -f gfm
+          --toc
+          -o ClearCode.pdf
+          --metadata-file=metadata.yml
+          --pdf-engine=wkhtmltopdf 
+          --css assets/pdf.css 
+          --metadata title="wuz's guide to clear code"
+          -s
+          ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
           name: ClearCode.pdf
@@ -31,17 +29,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          sudo apt install pandoc
           echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
-      - uses: docker://pandoc/latex:2.9
-        with:
-          args: >- # mulitline arguments
-            -f gfm
-            --toc
-            --css assets/epub.css 
-            -o ClearCode.epub
-            --metadata-file=metadata.yml
-            -s
-            ${{ env.FILELIST }}
+      - run: >-
+          pandoc
+          -f gfm
+          --toc
+          --css assets/epub.css 
+          -o ClearCode.epub
+          --metadata-file=metadata.yml
+          -s
+          ${{ env.FILELIST }}
       - uses: actions/upload-artifact@master
         with:
           name: ClearCode.epub
