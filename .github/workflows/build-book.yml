@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          sudo apt install wkhtmltopdf
           echo "::set-env name=FILELIST::$(printf '"%s" ' *.md)"
       - uses: docker://pandoc/latex:2.9
         with:
@@ -36,7 +37,7 @@ jobs:
           args: >- # mulitline arguments
             -f gfm
             --toc
-            --css assets/style.css 
+            --css assets/epub.css 
             -o ClearCode.epub
             --metadata-file=metadata.yml
             -s
