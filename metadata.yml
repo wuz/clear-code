@@ -5,6 +5,7 @@ author: wuz (Conlin Durbin)
 publisher: Hackerback Publishing
 rights: © 2020 Conlin Durbin, CC BY-NC
 stylesheet: assets/epub.css
+geometry: margin=2cm
 cover-image: assets/cover.png
 ---
 

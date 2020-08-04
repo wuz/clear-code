@@ -1,23 +1,21 @@
-
-# Clear Code
+---
 
 ## Introduction
 
-The internet contains countless debates and arguments about what good code *is*. Tabs vs. Space. Lots of comments vs. self documenting functions. `if/else` vs `switch/case`. The list goes on and on, but the usefulness of these debates is hardly ever clear. Instead, we occilate based on what the newest langauge prefers or what the now-in-vogue framework does. And yet we continue to have bad code.
+The internet contains countless debates and arguments about what good code _is_. Tabs vs. Space. Lots of comments vs. self documenting functions. `if/else` vs `switch/case`. The list goes on and on, but the usefulness of these debates is hardly ever clear. Instead, we occilate based on what the newest langauge prefers or what the now-in-vogue framework does. And yet we continue to have bad code.
 
 ### Why another "clean code" book?
 
-Clean Code, by "Uncle" Bob Martin, has now been out for 12 years. It was released when Bush Jr. was still in office. The world of programming has changed significantly - there are more new devs trying to navigate this world than ever and the options available to them are fairly lacking. Not to mention "Uncle" Bob has proven time and time again that he sets a poor moral example for incoming developers. Despite all of this, Clean Code remains a highly rated and ubiquitous introduction to the craft of software engineering. I think it's time for that to change. This book sets out to help 
+Clean Code, by "Uncle" Bob Martin, has now been out for 12 years. It was released when Bush Jr. was still in office. The world of programming has changed significantly - there are more new devs trying to navigate this world than ever and the options available to them are fairly lacking. Not to mention "Uncle" Bob has proven time and time again that he sets a poor moral example for incoming developers. Despite all of this, Clean Code remains a highly rated and ubiquitous introduction to the craft of software engineering. I think it's time for that to change. This book sets out to help
 
 ### What does Clear Code even mean?
 
-Clear code, in contrast to "clean" code is code that is written to express clarity above all else. Code clarity is the result of intentional decisions about architecture, formatting, and communication made within a team. This book is designed to act as a guide to the conversations you can have with your team about making your code clear and to provide examples of what clear code will look like for many organization. 
+Clear code, in contrast to "clean" code is code that is written to express clarity above all else. Code clarity is the result of intentional decisions about architecture, formatting, and communication made within a team. This book is designed to act as a guide to the conversations you can have with your team about making your code clear and to provide examples of what clear code will look like for many organization.
 
 #### Clear Code vs Clean Code
 
-I find examples to be the best tool for explaining concepts, especially related to code. Here I want to present a quick example of *clear code*, and show how it differs from *clean code*.
-The original "clean code" book says you should prefer rely on polymorphism over `if/else` and `switch/case` statements. In many codebases this does provide clearer code, however one doesn't have to look far to find a great example of this breaking down. In the Kubernetes source code, we can find incredibly *clear code*, that doesn't meet the definition of *clean code*. 
-
+I find examples to be the best tool for explaining concepts, especially related to code. Here I want to present a quick example of _clear code_, and show how it differs from _clean code_.
+The original "clean code" book says you should prefer rely on polymorphism over `if/else` and `switch/case` statements. In many codebases this does provide clearer code, however one doesn't have to look far to find a great example of this breaking down. In the Kubernetes source code, we can find incredibly _clear code_, that doesn't meet the definition of _clean code_.
 
 **Great, clear documentation**
 
@@ -39,7 +37,7 @@ The other key aspects of systems thinking are stocks, flows, and feedback loops.
 
 ## Don't do too much.
 
-*In progress*
+_In progress_
 
 ## Write Everything Twice
 
@@ -53,15 +51,15 @@ DRY, in technical terms, is a system by which every "piece of knowledge" has a s
 
 ## Always comment your abstractions
 
-*In progress*
+_In progress_
 
 ## Optimize for deletion
 
-*In progress*
+_In progress_
 
 ## Perfect is the enemy of working
 
-*In progress*
+_In progress_
 
 ## Deadlines wait for no dev
 
@@ -69,11 +67,11 @@ Never attribute to lack of thought that which you can attribute to opportunity c
 
 ## Smells
 
-*In progress*
+_In progress_
 
 ## Misc
 
-*In progress*
+_In progress_
 
 ### Use a formatter. Use a linter.
 
