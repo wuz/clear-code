@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }} - Clear Code</title>
+        <link rel="stylesheet" href="/assets/main.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="flex">
+                <img src="/assets/logo.png" alt="Broom logo" class="logo"/>
+                <a href="/">clear code</a>&nbsp;&mdash; a book by&nbsp;<a href="https://wuz.sh">wuz</a>
+            </div>
+            <div>
+                {{ prevPage | safe }}&nbsp;{{ nextPage | safe }}
+            </div>
+        </header>
+
+        <main class="content">
+            <article>
+                {{ content | safe }}
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>

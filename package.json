@@ -1,0 +1,15 @@
+{
+  "name": "clear-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wuz/clear-code.git",
+  "author": "Conlin Durbin <conlin@hackerrank.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
