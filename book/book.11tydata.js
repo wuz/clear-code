@@ -16,7 +16,7 @@ module.exports = {
           title: data.title,
           // tagline: ,
           cloudName: "wuz",
-          imagePublicID: "v1614095289/clear_code_social",
+          imagePublicID: "v1614095289/clear_code_social.png",
           titleFont: "Noto Sans",
           taglineFont: "Noto Sans",
           tagline: "Clear Code by Wuz",
