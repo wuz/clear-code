@@ -50,3 +50,7 @@ https://readingraphics.com/book-summary-thinking-in-systems/
 https://jasonmccreary.me/articles/the-reading-list/
 https://reasonablypolymorphic.com/blog/writing-technical-posts/
 https://www.stephaniemorillo.co/post/a-brief-introduction-to-technical-writing
+https://work.stevegrossi.com/2016/11/04/optimize-for-deletion/
+https://kellysutton.com/2017/05/29/deletability.html
+http://erlang.org/pipermail/erlang-questions/2012-March/065087.html
+http://carlos.bueno.org/optimization/

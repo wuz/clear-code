@@ -10,11 +10,11 @@ The internet contains countless debates and arguments about what good code _is_.
 
 Here's a quick experiment, one purely based in conjecture and surely not representative of real life. Let's imagine a seminal work (we'll call it CODE CLEAN) on "clean code", written in 2008. George Bush Jr. is still in office and Obama is a couple months from being elected. Blogger is the most popular website in the United States and the iPhone has just hit it's third generation.
 
-Coding bootcamps were quite young and Stack Overflow was still a couple months from being launched. Java is a big deal and EcmaScript 5 (the first major revision to Javascript), is still a year away. Now, let's fast forward to the current year. Referencing our hypothetical book, CODE CLEAN, might be questionable given the reality that it was written in.
+Coding bootcamps are quite young and Stack Overflow is still a couple months from being launched. Java is a big deal and EcmaScript 5 (the first major revision to Javascript), is still a year away. Now, let's fast forward this reality to the current year (2021 at the time of writing). Referencing our hypothetical book, CODE CLEAN, might be questionable given the pace and change of code over the last 13 years.
 
-Now, just for fun, let's imagine we are in the current year and that within the tech field there are still massive problems for people of color, women, and LGBTQ+ folks (a wild hypothetical, I know!). The author of that CODE CLEAN book has, hypothetically, been known as particularly vitriolic and harmful towards those groups for quite some time. Despite the age of the book and the quality of its author, let's assume the book has continued to be recommended as an introductory text in the field of Software Engineering.
+Now, just for fun, let's imagine that within the tech field there are still massive problems for people of color, women, and LGBTQ+ folks (a wild hypothetical, I know!). The author of that CODE CLEAN book has, hypothetically, been known as particularly vitriolic and harmful towards those groups for quite some time. Despite the age of the book and the quality of its author, let's assume the book has continued to be recommended as an introductory text in the field of Software Engineering.
 
-In this hypothetical, it would seem that there is a need for a new book on the topic, would it not?
+In this pure hypothetical, it would seem that there is a need for a new book on the topic, would it not?
 
 ### What does Clear Code even mean?
 
