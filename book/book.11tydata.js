@@ -1,3 +1,4 @@
+const getShareImage = require("@jlengstorf/get-share-image").default;
 const pageOrder = [
   { name: "Introduction", link: "/book/introduction" },
   { name: "Code Clarity", link: "/book/code-clarity" },
@@ -9,6 +10,23 @@ const pageOrder = [
 module.exports = {
   layout: "default.njk",
   eleventyComputed: {
+    shareImage: (data) => {
+      return (
+        getShareImage({
+          title: data.title,
+          // tagline: ,
+          cloudName: "wuz",
+          imagePublicID: "v1614095289/clear_code_social",
+          titleFont: "Noto Sans",
+          taglineFont: "Noto Sans",
+          tagline: "Clear Code by Wuz",
+          textLeftOffset: 600,
+          titleBottomOffset: 180,
+          taglineTopOffset: 520,
+          textColor: "232129",
+        }) || "https://clearcode.guide/assets/logo.png"
+      );
+    },
     nextPage: (data) => {
       const currentPage = `/book/${data.page.fileSlug}`;
       const pages = pageOrder.map((page) => page.link);
