@@ -454,3 +454,17 @@ table td {
   display: inline-block;
   font-size: 32px;
 }
+
+.feedback {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #7800f0;
+  padding: 8px 16px;
+  border-radius: 99px;
+  color: #fff;
+}
+
+.feedback a {
+  color: currentColor;
+}
