@@ -1,9 +1,9 @@
 const getShareImage = require("@jlengstorf/get-share-image").default;
 const pageOrder = [
   { name: "Introduction", link: "/book/introduction" },
-  { name: "Code Clarity", link: "/book/code-clarity" },
-  { name: "Communication Clarity", link: "/book/communication-clarity" },
-  { name: "Organization Clarity", link: "/book/organization-clarity" },
+  { name: "Code", link: "/book/code" },
+  { name: "Communication", link: "/book/communication" },
+  { name: "Organization", link: "/book/organization" },
   { name: "Tools", link: "/book/tools" },
 ];
 

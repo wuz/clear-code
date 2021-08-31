@@ -38,6 +38,7 @@ https://poignant.guide/book/chapter-3.html
 
 ## Saved for later
 
+https://twitter.com/gonedark/status/936275444420268032/photo/1
 https://qntm.org/clean
 https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction
 https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
