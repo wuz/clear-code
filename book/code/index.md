@@ -60,7 +60,6 @@ Alright, clickbait aside, let's dive into what DRY is, what good parts exist, an
 
 DRY, in technical terms, is a system by which every "piece of knowledge" has a single, unambigous representation within a system.
 
-## Always comment your abstractions
 
 _In progress_
 

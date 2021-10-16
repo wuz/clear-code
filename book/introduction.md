@@ -78,11 +78,13 @@ Ok, hopefully we are on the same page now. Let's head to the next one together.
 
 ---
 
-This book isn't super long. There are five chapters, including this introduction. The advice here aims to be practical and straightforward. The ideas in here aren't new and I didn't come up with them. I've even pulled the most important information into "big idea" blocks, which look like this:
+This book isn't super long. There are five chapters, including this introduction. The advice here aims to be practical and straightforward. The ideas in here aren't new and I didn't come up with them. 
+
+I've pulled the most important information into "big idea" blocks, which look like this:
 
 <div class="big-idea">
 <span class="big-idea-icon">✨</span>
 Pick a formatter or linter. Run it on all your files
 </div>
 
-Each big idea is actionable and straightforward.
+Each "big idea" is actionable and straightforward. There is also a list of all of them at the end of the book with references to the page where you can find them.
