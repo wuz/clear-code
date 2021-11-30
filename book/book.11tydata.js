@@ -2,6 +2,9 @@ const getShareImage = require("@jlengstorf/get-share-image").default;
 const pageOrder = [
   { name: "Introduction", link: "/book/introduction" },
   { name: "Code", link: "/book/code" },
+  { name: "Formatting", link: "/book/code/formatting" },
+  { name: "Abstraction", link: "/book/code/abstraction" },
+  { name: "Symmetry", link: "/book/code/symmetry" },
   { name: "Communication", link: "/book/communication" },
   { name: "Organization", link: "/book/organization" },
   { name: "Tools", link: "/book/tools" },
@@ -28,7 +31,7 @@ module.exports = {
       );
     },
     nextPage: (data) => {
-      const currentPage = `/book/${data.page.fileSlug}`;
+      const currentPage = `${data.page.url}`.slice(0, -1);
       const pages = pageOrder.map((page) => page.link);
       const nextPageIndex = pages.indexOf(currentPage);
       nextPage = pageOrder[0];

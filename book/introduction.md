@@ -64,7 +64,7 @@ The other key aspects of systems thinking are stocks, flows, and feedback loops.
 
 ## What lies within
 
-A wise Rubyist once waxed that a book is supposed to start with _synergy_ - at this point in the book, you and I should be getting along well. You should trust me to lead you through this book. However, while this introduction has introduced the concept of clear code, it has yet to introduce me. Without further ado:
+A wise Rubyist once said that a book is supposed to start with _synergy_ - at this point in the book, you and I should be getting along well. You should trust me to lead you through this book. However, while this introduction has introduced the concept of clear code, it has yet to introduce me. Without further ado:
 
 Howdy, I'm **wuz** and I'm here to hopefully give you some strategies to bring clarity to your code. I've been building software for over 10 years now and in those years, I've written a lot of code. Not all of that code was clear (or even that good), but in that time I have read much more code than I've written.
 
