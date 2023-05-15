@@ -17,7 +17,7 @@ and future-proofing our systems of development.
 ---
 
 ## Table of Contents
-1. [Introduction](/book/introduction)
-2. [Code](/book/code)
-3. [Communication](/book/communication)
-4. [Ogranization](/book/organization)
+1. [[Introduction]]
+2. [[Code]]
+3. [[Communication]]
+4. [[Ogranization]]

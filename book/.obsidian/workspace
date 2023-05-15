@@ -1,29 +1,33 @@
 {
   "main": {
-    "id": "9dc240edfcd4e869",
+    "id": "8eb96bce08b72c22",
     "type": "split",
     "children": [
       {
-        "id": "3f518f17dfcd6c98",
+        "id": "1c702303f7b7b27e",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "code/metrics.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "74a94ee4b1946e48",
+    "id": "99b4468851d9bb1e",
     "type": "split",
     "children": [
       {
-        "id": "8c3a477621ffd28e",
+        "id": "c63d83cbb5b8157c",
         "type": "tabs",
         "children": [
           {
-            "id": "f727983534290522",
+            "id": "0228776bab74f136",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -31,7 +35,7 @@
             }
           },
           {
-            "id": "11debd866f53d3c7",
+            "id": "d54393baa50ef5ff",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -52,19 +56,20 @@
     "width": 300
   },
   "right": {
-    "id": "fec34b9a22f5bebe",
+    "id": "a46d5d5c5312ea07",
     "type": "split",
     "children": [
       {
-        "id": "7bbf0ea16c955992",
+        "id": "5243099168d48dbd",
         "type": "tabs",
         "children": [
           {
-            "id": "7fff00a388a2d4a7",
+            "id": "0b072e263839f5c2",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "code/metrics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,9 +87,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3f518f17dfcd6c98",
+  "active": "1c702303f7b7b27e",
   "lastOpenFiles": [
-    "book/introduction.md",
-    "book/index.md"
+    "code/metrics.md",
+    "code/index.md",
+    "code/abstraction.md",
+    "tools.md",
+    "introduction.md",
+    "index.md",
+    "book/assets/kubernetes_clear_code_example.png.md"
   ]
 }

@@ -27,28 +27,19 @@ The original "clean code" book says that `if/else` statements are a code smell, 
 
 **Great, clear documentation**
 
-<figure>
+![[kubernetes_clear_code_example_docs.png]]
 
-![An example of clear code documentation in the kubernetes codebase](/book/assets/kubernetes_clear_code_example_docs.png)
+Good documentation is a core tenet of Clear Code. Large blocks of documentation like this are often abstracted out into knowledge base systems, which reduces their clearness. 
 
-<figcaption>
-
-Good documentation is a core tenet of Clear Code. Large blocks of documentation like this are often abstracted out into knowledge base systems, which reduces their clearness. More on this in LINK</figcaption>
-
-</figure>
+More on this in LINK
 
 <!-- TODO: Link here -->
 
 **Clear, but not "clean"**
 
-<figure>
+![[kubernetes_clear_code_example.png]]
 
-![An example of clear code in the kubernetes codebase](/book/assets/kubernetes_clear_code_example.png)
-
-<figcaption>
 Combined with good documentation and reasoning, lots of `if` statements quickly move into clear code territory, even when they wouldn't typically be considered "clean"
-</figcaption>
-</figure>
 
 ### A Systems approach
 
